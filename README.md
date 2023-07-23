@@ -93,7 +93,7 @@ helm upgrade thanos bitnami/thanos -n monitoring \
 ```
 
 ### Grafana
-````
+```
 helm install grafana bitnami/grafana \
   --set service.type=LoadBalancer \
   --set admin.password=admin --namespace monitoring
