@@ -43,11 +43,10 @@ Example Output:
    ⠿ [thanos] MetalLB deployed
    ⠿ [remote1] MetalLB deployed
    ⠿ [remote2] MetalLB deployed
-
 ```
 
-### Verify the installation 
-Ref: https://istio.io/latest/docs/setup/install/multicluster/verify/
+We will deploy one Prometheus Operator for each workload cluster. In each workload cluster we will change the externalLabel of the cluster, so for workload remote1 we can use data-producer-1 and for workload remote2 we can use data-producer-2
+
 ```
 $ kubectl config get-contexts 
 CURRENT   NAME            CLUSTER         AUTHINFO        NAMESPACE
@@ -55,8 +54,6 @@ CURRENT   NAME            CLUSTER         AUTHINFO        NAMESPACE
           kind-remote1    kind-remote1    kind-remote1    
 *         kind-remote2    kind-remote2    kind-remote2  
 
-
-We will deploy one Prometheus Operator for each workload cluster. In each workload cluster we will change the externalLabel of the cluster, so for workload remote1 we can use data-producer-1 and for workload remote2 we can use data-producer-2
 
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
@@ -97,7 +94,6 @@ helm upgrade thanos bitnami/thanos -n monitoring \
 helm install grafana bitnami/grafana \
   --set service.type=LoadBalancer \
   --set admin.password=admin --namespace monitoring
-
 
 ```
 
