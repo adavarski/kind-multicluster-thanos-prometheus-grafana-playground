@@ -90,12 +90,20 @@ Substitute this password by KEY (secret_key: KEY)  in your values.yaml file, and
 
 helm upgrade thanos bitnami/thanos -n monitoring \
   --values values.yaml
+```
 
+### Grafana
+````
 helm install grafana bitnami/grafana \
   --set service.type=LoadBalancer \
   --set admin.password=admin --namespace monitoring
 
 ```
+Once the pod is up and running, access Grafana from the UI and add Prometheus as Data Source with the following URL:
+
+`http://thanos-query.monitoring.svc.cluster.local:9090`
+
+Click Save and Test and you should get a message in green saying that Data source is working.
 
 
 
