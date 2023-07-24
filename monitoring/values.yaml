@@ -4,7 +4,7 @@ objstoreConfig: |-
     bucket: thanos
     endpoint: {{ include "thanos.minio.fullname" . }}.monitoring.svc.cluster.local:9000
     access_key: minio
-    secret_key: j3oYeYIVcH
+    secret_key: KEY
     insecure: true
 querier:
   stores:
@@ -31,5 +31,5 @@ minio:
   accessKey:
     password: "minio"
   secretKey:
-    password: "j3oYeYIVcH"
+    password: "KEY"
   defaultBuckets: "thanos"
