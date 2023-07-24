@@ -90,6 +90,30 @@ Substitute this password by KEY (secret_key: KEY)  in your values.yaml file, and
 
 helm upgrade thanos bitnami/thanos -n monitoring \
   --values values.yaml
+
+
+                       +--------------+                  +--------------+      +--------------+
+                       | Thanos       |----------------> | Thanos Store |      | Thanos       |
+                       | Query        |           |      | Gateway      |      | Compactor    |
+                       +--------------+           |      +--------------+      +--------------+
+                   push                           |             |                     |
++--------------+   alerts   +--------------+      |             | storages            | Downsample &
+| Alertmanager | <----------| Thanos       | <----|             | query metrics       | compact blocks
+| (*)          |            | Ruler        |      |             |                     |
++--------------+            +--------------+      |             \/                    |
+      ^                            |              |      +----------------+           |
+      | push alerts                +--------------|----> | MinIO&reg; (*) | <---------+
+      |                                           |      |                |
++------------------------------+                  |      +----------------+
+|+------------+  +------------+|                  |             ^
+|| Prometheus |->| Thanos     || <----------------+             |
+|| (*)        |<-| Sidecar (*)||    query                       | inspect
+|+------------+  +------------+|    metrics                     | blocks
++------------------------------+                                |
+                                                         +--------------+
+                                                         | Thanos       |
+                                                         | Bucket Web   |
+                                                         +--------------+
 ```
 
 ### Grafana
@@ -116,3 +140,5 @@ Deleting cluster "remote1" ...
 $ kind delete cluster --name=remote2
 Deleting cluster "remote2" .
 ```
+
+REF: https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
