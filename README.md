@@ -177,4 +177,6 @@ $ kind delete cluster --name=remote2
 Deleting cluster "remote2" .
 ```
 
-REF: https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
+Ref: 
+- https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
+- https://github.com/edubonifs/multicluster-canary
