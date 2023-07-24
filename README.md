@@ -91,6 +91,42 @@ Substitute this password by KEY in your values.yaml file, and upgrade the helm c
 helm upgrade thanos bitnami/thanos -n monitoring \
   --values values.yaml
 
+Example Output:
+Release "thanos" has been upgraded. Happy Helming!
+NAME: thanos
+LAST DEPLOYED: Mon Jul 24 18:25:00 2023
+NAMESPACE: monitoring
+STATUS: deployed
+REVISION: 3
+TEST SUITE: None
+NOTES:
+CHART NAME: thanos
+CHART VERSION: 12.8.6
+APP VERSION: 0.31.0** Please be patient while the chart is being deployed **
+
+Thanos chart was deployed enabling the following components:
+- Thanos Query
+- Thanos Bucket Web
+- Thanos Compactor
+- Thanos Ruler
+- Thanos Store Gateway
+
+Thanos Query can be accessed through following DNS name from within your cluster:
+
+    thanos-query.monitoring.svc.cluster.local (port 9090)
+
+To access Thanos Query from outside the cluster execute the following commands:
+
+1. Get the Thanos Query URL by running these commands:
+
+    export SERVICE_PORT=$(kubectl get --namespace monitoring -o jsonpath="{.spec.ports[0].port}" services thanos-query)
+    kubectl port-forward --namespace monitoring svc/thanos-query ${SERVICE_PORT}:${SERVICE_PORT} &
+    echo "http://127.0.0.1:${SERVICE_PORT}"
+
+2. Open a browser and access Thanos Query using the obtained URL.
+
+
+Architecture:
 
                        +--------------+                  +--------------+      +--------------+
                        | Thanos       |----------------> | Thanos Store |      | Thanos       |
