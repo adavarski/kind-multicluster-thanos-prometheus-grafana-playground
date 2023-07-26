@@ -139,29 +139,18 @@ To access Thanos Query from outside the cluster execute the following commands:
 
 Architecture:
 
-                       +--------------+                  +--------------+      +--------------+
-                       | Thanos       |----------------> | Thanos Store |      | Thanos       |
-                       | Query        |           |      | Gateway      |      | Compactor    |
-                       +--------------+           |      +--------------+      +--------------+
-                   push                           |             |                     |
-+--------------+   alerts   +--------------+      |             | storages            | Downsample &
-| Alertmanager | <----------| Thanos       | <----|             | query metrics       | compact blocks
-| (*)          |            | Ruler        |      |             |                     |
-+--------------+            +--------------+      |             \/                    |
-      ^                            |              |      +----------------+           |
-      | push alerts                +--------------|----> | MinIO&reg; (*) | <---------+
-      |                                           |      |                |
-+------------------------------+                  |      +----------------+
-|+------------+  +------------+|                  |             ^
-|| Prometheus |->| Thanos     || <----------------+             |
-|| (*)        |<-| Sidecar (*)||    query                       | inspect
-|+------------+  +------------+|    metrics                     | blocks
-+------------------------------+                                |
-                                                         +--------------+
-                                                         | Thanos       |
-                                                         | Bucket Web   |
-                                                         +--------------+
 ```
+
+Thanos Query (Stores):
+
+<img src="pictures/Thanos-Query-Stories.png?raw=true" width="1000">
+
+Thanos Architecture:
+
+<img src="pictures/thanos-architecture.png?raw=true" width="1000">
+
+<img src="pictures/thanos-diagram.webp?raw=true" width="1000">
+
 
 ### Grafana
 ```
