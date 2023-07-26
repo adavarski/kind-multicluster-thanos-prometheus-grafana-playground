@@ -149,7 +149,7 @@ Thanos Architecture:
 
 <img src="pictures/thanos-architecture.png?raw=true" width="1000">
 
-<img src="pictures/thanos-diagram.webp?raw=true" width="1000">
+<img src="pictures/thanos-diagram.webp?raw=true" width="500">
 
 
 ### Grafana
