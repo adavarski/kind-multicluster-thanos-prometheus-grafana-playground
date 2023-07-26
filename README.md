@@ -13,7 +13,7 @@
 Run the `setup-clusters.sh` script. It creates three KinD clusters:
 
 - One thanos cluster (`thanos`)
-- Two Istio remotes (`remote1`, `remote2`)
+- Two remotes (`remote1`, `remote2`)
 
 `kubectl` contexts are named respectively:
 
