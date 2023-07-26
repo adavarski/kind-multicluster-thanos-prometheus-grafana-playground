@@ -83,6 +83,17 @@ kubectl config use-context kind-thanos
 kubectl create ns monitoring
 
 cd monitoring
+
+Edit values.yaml (SIDECAR-SERVICE-IP-ADDRESS-1:10901 & SIDECAR-SERVICE-IP-ADDRESS-2:10901)
+
+$ kubectl config use-context kind-remote1
+$ kubectl get svc --all-namespaces|grep thanos
+default          prometheus-operator-kube-p-prometheus-thanos         LoadBalancer   10.255.20.171   172.17.255.30   10901:30621/TCP                102m
+$ kubectl config use-context kind-remote2
+$ kubectl get svc --all-namespaces|grep thanos
+default          prometheus-operator-kube-p-prometheus-thanos         LoadBalancer   10.255.30.185   172.17.255.50   10901:30493/TCP                100m
+
+
 helm install thanos bitnami/thanos -n monitoring --values values.yaml
 kubectl  get secret -n monitoring thanos-minio -o yaml -o jsonpath={.data.root-password} | base64 -d
 
