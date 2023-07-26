@@ -7,7 +7,6 @@
 - [Docker](https://docs.docker.com/)
 - [KinD](https://kind.sigs.k8s.io/)
 - [kubectl](https://kubernetes.io/docs/reference/kubectl/)
-- [istioctl](https://istio.io/latest/docs/setup/install/istioctl/)
 
 
 Run the `setup-clusters.sh` script. It creates three KinD clusters:
