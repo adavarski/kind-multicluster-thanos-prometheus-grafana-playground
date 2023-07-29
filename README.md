@@ -194,6 +194,7 @@ Deleting cluster "remote2" .
 
 <img src="pictures/Thanos-prometeteus-metrics-problem.png?raw=true" width="1300">
 
+<img src="pictures/Thanos-Query-Prometheus-Rules.png?raw=true" width="1300">
 
 - https://thanos.io/tip/components/query.md/
 - https://thanos.io/tip/operating/compactor-backlog.md/
