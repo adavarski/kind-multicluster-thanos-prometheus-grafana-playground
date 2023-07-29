@@ -137,9 +137,9 @@ To access Thanos Query from outside the cluster execute the following commands:
 2. Open a browser and access Thanos Query using the obtained URL.
 
 
-Architecture:
-
 ```
+## Architecture:
+
 
 Thanos Query (Stores):
 
