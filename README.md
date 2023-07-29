@@ -213,5 +213,6 @@ Deleting cluster "remote2" .
 
 Ref: 
 - https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
+- https://thesaadahmed.medium.com/thanos-monitoring-with-prometheus-and-grafana-843ed231c8a6
 - Credits: https://github.com/edubonifs/multicluster-canary
 
