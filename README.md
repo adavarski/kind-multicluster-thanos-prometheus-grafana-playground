@@ -162,6 +162,16 @@ Thanos Architecture:
 <img src="pictures/thanos-diagram.webp?raw=true" width="500">
 
 
+Thanos logical operations:
+
+<img src="pictures/Thanos_logical_view.svg.png?raw=true" width="500">
+
+Thanos deployment in Production is illustrated by the following diagram:
+
+<img src="pictures/Thanos_deployment_view.svg.png?raw=true" width="500">
+
+
+
 ### Grafana
 ```
 helm install grafana bitnami/grafana \
