@@ -187,7 +187,8 @@ Deleting cluster "remote2" .
 ```
 
 ## TODO: Fix Prometheus & Grafana dashboards for Thanos: 
-https://thanos.io/tip/components/query.md/
+- https://thanos.io/tip/components/query.md/
+- https://thanos.io/tip/operating/compactor-backlog.md/
 
 Ref: 
 - https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
