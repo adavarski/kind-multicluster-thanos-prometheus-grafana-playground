@@ -136,6 +136,16 @@ To access Thanos Query from outside the cluster execute the following commands:
 
 2. Open a browser and access Thanos Query using the obtained URL.
 
+$ kubectl get po -n monitoring
+NAME                                     READY   STATUS    RESTARTS   AGE
+thanos-bucketweb-d8c4ff845-hqlqc         1/1     Running   0          2m4s
+thanos-compactor-65cc47bd56-t9fpt        1/1     Running   0          2m3s
+thanos-minio-57c56b9854-8gc5s            1/1     Running   0          2m3s
+thanos-query-7d5c88c67b-22r4j            1/1     Running   0          3m3s
+thanos-query-frontend-7d4d455875-lpxpk   1/1     Running   0          3m3s
+thanos-ruler-0                           1/1     Running   0          2m
+thanos-storegateway-0                    1/1     Running   0          42s
+
 
 ```
 Screenshot: Thanos Query (Stores):
