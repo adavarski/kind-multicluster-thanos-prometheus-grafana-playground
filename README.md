@@ -155,9 +155,11 @@ Screenshot: Thanos Query (Stores):
 
 ## Architecture:
 
-Thanos Architecture:
+Architecture diagram for implementation of Thanos with prometheus:
 
 <img src="pictures/thanos-architecture.png?raw=true" width="1000">
+
+Diagram for the purpose of understanding the whole concept and applying it in local environment and testing it:
 
 <img src="pictures/thanos-diagram.webp?raw=true" width="500">
 
