@@ -213,7 +213,7 @@ Deleting cluster "remote2" .
 
 Diagram shows what Querier does for each Prometheus query request:
 
-<img src="pictures/querier.svg?raw=true" width="1300">
+<img src="pictures/querier.svg?raw=true" width="500">
 
 Ref: 
 - https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
