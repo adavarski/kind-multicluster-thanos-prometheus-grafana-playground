@@ -186,7 +186,8 @@ $ kind delete cluster --name=remote2
 Deleting cluster "remote2" .
 ```
 
-## TODO: Fix Grafana dashboards and Prometheus (https://thanos.io/tip/components/query.md/)
+## TODO: Fix Prometheus & Grafana dashboards for Thanos: 
+https://thanos.io/tip/components/query.md/
 
 Ref: 
 - https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
