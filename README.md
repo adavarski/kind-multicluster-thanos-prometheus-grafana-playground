@@ -190,6 +190,8 @@ Deleting cluster "remote2" .
 
 <img src="pictures/Grafana-explore-NO-thanos-metrics.png?raw=true" width="1300">
 
+<img src="pictures/Thanos-Query-missing-thanos-metrics.png?raw=true" width="1300">
+
 <img src="pictures/Thanos-prometeteus-metrics-problem.png?raw=true" width="1300">
 
 
