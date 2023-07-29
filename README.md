@@ -150,7 +150,7 @@ thanos-storegateway-0                    1/1     Running   0          42s
 ```
 Screenshot: Thanos Query (Stores):
 
-<img src="pictures/Thanos-Query-Stories.png?raw=true" width="1000">
+<img src="pictures/Thanos-Query-UI-Stores.png?raw=true" width="1300">
 
 
 ## Architecture:
