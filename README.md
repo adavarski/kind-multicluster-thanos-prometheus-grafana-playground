@@ -208,6 +208,8 @@ Deleting cluster "remote2" .
 
 <img src="pictures/Thanos-Query-Prometheus-Rules.png?raw=true" width="1300">
 
+Links: 
+
 - https://thanos.io/tip/components/query.md/
 - https://thanos.io/tip/operating/compactor-backlog.md/
 
@@ -215,7 +217,7 @@ Diagram shows what Querier does for each Prometheus query request:
 
 <img src="pictures/querier.svg?raw=true" width="500">
 
-Ref: 
+### Ref: 
 - https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
 - https://thesaadahmed.medium.com/thanos-monitoring-with-prometheus-and-grafana-843ed231c8a6
 - Credits: https://github.com/edubonifs/multicluster-canary
