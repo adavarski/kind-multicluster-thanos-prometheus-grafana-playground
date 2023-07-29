@@ -138,12 +138,12 @@ To access Thanos Query from outside the cluster execute the following commands:
 
 
 ```
-## Architecture:
-
-
-Thanos Query (Stores):
+Screenshot: Thanos Query (Stores):
 
 <img src="pictures/Thanos-Query-Stories.png?raw=true" width="1000">
+
+
+## Architecture:
 
 Thanos Architecture:
 
@@ -164,7 +164,6 @@ Once the pod is up and running, access Grafana from the UI and add Prometheus as
 `http://thanos-query.monitoring.svc.cluster.local:9090`
 
 Click Save and Test and you should get a message in green saying that Data source is working.
-
 
 
 ## Clean local environment
