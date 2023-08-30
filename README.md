@@ -1,4 +1,4 @@
-# KinD: Thanos ( Highly available Prometheus setup ) Lab multi-cluster
+# (WIP) KinD: Thanos ( Highly available Prometheus setup ) Lab multi-cluster
 
 
 ## Requirements
