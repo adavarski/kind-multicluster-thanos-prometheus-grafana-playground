@@ -255,6 +255,8 @@ Diagram shows what Querier does for each Prometheus query request:
 - https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
 - https://thesaadahmed.medium.com/thanos-monitoring-with-prometheus-and-grafana-843ed231c8a6
 - https://medium.com/nerd-for-tech/deep-dive-into-thanos-part-i-f72ecba39f76 && https://medium.com/nerd-for-tech/deep-dive-into-thanos-part-ii-8f48b8bba132
+- https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/
 - Credits: https://github.com/edubonifs/multicluster-canary
+  
 
 
