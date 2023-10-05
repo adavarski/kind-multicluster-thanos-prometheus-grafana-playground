@@ -216,7 +216,7 @@ Browse to the [MySQL Overview dashboard in the Percona GitHub repository](https:
 Log in to Grafana. From the Grafana dashboard, click the "Import -> Dashboard" menu item. On the "Import" page, paste the JSON model into the "Or paste JSON" field. Click "Load" to load the data and then "Import" to import the dashboard. 
 Connect to the MariaDB service in the first "data producer" cluster and perform some actions, such as creating a database, adding records to a table and executing a query. Perform similar actions in the second "data producer" cluster. You should see your activity in each cluster reflected in the MySQL Overview chart in Grafana, as shown below. We can view metrics from individual master and slave nodes in each cluster by selecting a different host in the "Host" drop down of the dashboard, as shown below:
 
-<img src="pictures/thanos-test-mysql.png?raw=true" width="500">
+<img src="pictures/thanos-test-mysql.png?raw=true" width="900">
 
 You can now continue adding more applications to your clusters. So long as you enable Prometheus metrics and a Prometheus Operator ServiceMonitor for each deployment, Thanos will continuously receive and aggregate the metrics and you can inspect them using Grafana.
 
