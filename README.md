@@ -230,7 +230,7 @@ $ kind delete cluster --name=remote2
 Deleting cluster "remote2" .
 ```
 
-## TODO: Fix Prometheus & Grafana dashboards for Thanos: 
+## Thanos screenshots: 
 
 <img src="pictures/Thanos-Query-UI-Stores.png?raw=true" width="1300">
 
